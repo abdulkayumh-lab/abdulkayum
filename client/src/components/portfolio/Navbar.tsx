@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import Monogram from "./Monogram";
 
 const LINKS = [
   { href: "#work", label: "Work" },
@@ -25,7 +26,8 @@ export default function Navbar() {
         scrolled ? "bg-background/85 backdrop-blur-md border-b border-border" : "bg-transparent"
       }`}>
       <nav className="container flex items-center justify-between h-16 md:h-20">
-        <a href="#top" className="font-display text-xl md:text-2xl tracking-wide text-foreground">
+        <a href="#top" className="flex items-center gap-3 font-display text-xl md:text-2xl tracking-wide text-foreground">
+          <Monogram size={26} className="text-gold" />
           Abdul <span className="gold-gradient-text">Kayum</span>
         </a>
 
